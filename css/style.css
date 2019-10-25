@@ -4,6 +4,7 @@ h1, h2, h3 {
   font-family: 'Roboto';
   text-transform: uppercase;
   text-align: center;
+  padding: 20px 0px;
 }
 
 /* Navbar */
@@ -179,6 +180,24 @@ section#lintronics-services div.services-card ul {}
 
   section#lintronics-about h2, p {
     text-align: center;
+  }
+
+  nav a:before {
+    content: none;
+    height: 0px;
+    display: none;
+    opacity: 0;
+    background-color: white !important;
+  }
+
+  nav a:hover:before {
+    height: 1000px;
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: white !important;
   }
 }
 
