@@ -1,0 +1,209 @@
+body {}
+
+h1, h2, h3 {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Navbar */
+div.nav-container {}
+
+nav.navbar {
+  font-family: 'Roboto';
+  color: black !important;
+}
+
+nav a.nav-link {
+  color: black !important;
+}
+
+nav a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* Header */
+header {
+  height: auto;
+}
+
+header h1 {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Header Slider */
+div.lintronics-slider img {
+  display: block;
+  margin: 0 auto;
+}
+
+div.lintronics-textbox {
+  padding: 20px 0px;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+div.lintronics-textbox h1 {
+  font-size: 5rem;
+  letter-spacing: 3px;
+}
+
+div.lintronics-textbox h2 {
+  font-size: 1.5rem;
+}
+
+.btn-header {
+  margin-top: 5vh;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1.25rem 2.25rem;
+  font-size: .85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: black;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-header:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* About Section */
+section#lintronics-about {
+  height: auto;
+  background-color: #D3D3D3;
+  padding: 50px 0px;
+}
+
+section#lintronics-about h2 {
+  padding: 15px 0px;
+}
+
+section#lintronics-about div.container {
+  padding-top: 20px;
+}
+
+section#lintronics-about img {
+  width: 450px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.about-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+/* Services Section */
+.displayNow {
+  display: block;
+}
+
+section#lintronics-services div.services-card {
+  background-color: #D3D3D3;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  transition: 0.25s ease-in;
+}
+
+section#lintronics-services div.services-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section#lintronics-services div.services-card i {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section#lintronics-services div.services-card ul {}
+
+/* Media Queries */
+@media only screen and (max-width: 991px) {
+  div.lintronics-textbox h1 {
+    font-size: 3rem;
+  }
+
+  div.lintronics-textbox h2 {
+    font-size: 1rem;
+  }
+
+  section#lintronics-about img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  section#lintronics-about h2, p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  div.lintronics-slider img {
+    width: 100%;
+  }
+
+  section#lintronics-about img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 507px) {
+  div.lintronics-textbox h1 {
+    font-size: 2rem;
+  }
+
+  div.lintronics-textbox h2 {
+    font-size: 0.5rem;
+  }
+}
+
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0.75);
+  transform: scaleX(0.75);
+}
