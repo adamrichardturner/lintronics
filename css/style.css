@@ -149,6 +149,7 @@ section#lintronics-services div.services-card {
   margin: 10px;
   text-align: center;
   transition: 0.25s ease-in;
+  height: 320px;
 }
 
 section#lintronics-services div.services-card:hover {
