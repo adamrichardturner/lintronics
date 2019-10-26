@@ -165,10 +165,6 @@ section#lintronics-services div.services-card ul {}
 
 /* Media Queries */
 @media only screen and (max-width: 991px) {
-  header {
-    height: auto !important;
-  }
-
   div.lintronics-textbox h1 {
     font-size: 3rem;
   }
