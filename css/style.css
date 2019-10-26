@@ -79,7 +79,7 @@ nav a:before {
 
 /* Header */
 header {
-  height: 100vh;
+  height: auto;
 }
 
 header h1 {
@@ -393,6 +393,13 @@ footer {
 
 /* Other Phones */
 @media only screen and (min-device-width: 375px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header {
+    height: auto !important;
+  }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 1440px) {
   header {
     height: auto !important;
   }
