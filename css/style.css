@@ -196,6 +196,17 @@ section#lintronics-services-full img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Contact Us */
+section#contact {}
+
+#form {
+  position: static;
+  display: block;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 991px) {
   div.lintronics-textbox h1 {
@@ -207,6 +218,11 @@ section#lintronics-services-full img {
   }
 
   section#lintronics-about img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  section#lintronics-services-full img {
     display: block;
     margin: 0 auto;
   }
@@ -240,6 +256,10 @@ section#lintronics-services-full img {
   }
 
   section#lintronics-about img {
+    width: 100%;
+  }
+
+  section#lintronics-services-full img {
     width: 100%;
   }
 
