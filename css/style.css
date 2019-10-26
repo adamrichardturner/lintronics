@@ -9,6 +9,10 @@ h1, h2, h3 {
   padding: 20px 0px;
 }
 
+h3 {
+  padding: 0px;
+}
+
 h1 {
   padding-bottom: 0px;
 }
@@ -86,6 +90,10 @@ header h1 {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
+}
+
+header h3 {
+  font-size: 1.15rem;
 }
 
 /* Header Slider */
