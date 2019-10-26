@@ -197,7 +197,15 @@ section#lintronics-services-full img {
 }
 
 /* Contact Us */
-section#contact {}
+section#contact {
+  height: auto;
+  padding: 50px 0px;
+}
+
+.googlemap {
+  display: block;
+  margin: 0 auto;
+}
 
 #form {
   position: static;
@@ -205,6 +213,12 @@ section#contact {}
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Footer */
+footer {
+  height: 25vh;
+  background: #68A4C4;
 }
 
 /* Media Queries */
