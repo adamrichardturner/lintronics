@@ -3,7 +3,7 @@ html {
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
   padding: 20px 0px;
@@ -44,7 +44,7 @@ a:hover {
 div.nav-container {}
 
 nav.navbar {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   color: black !important;
 }
 
@@ -83,7 +83,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
@@ -94,22 +94,14 @@ div.lintronics-slider img {
   margin: 0 auto;
 }
 
-div.lintronics-caption {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  margin: 0;
-  position: relative;
-  width: 100%
-}
-
 div.lintronics-textbox {
   padding: 20px 0px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
 div.lintronics-textbox h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   letter-spacing: 3px;
 }
 
