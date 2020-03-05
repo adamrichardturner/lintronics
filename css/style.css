@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-html, body {
+body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .white {
@@ -162,12 +165,27 @@ div.card-front h3 {
   align-items: center;
   justify-content: center;
   height: 100%;
+  background-attachment: fixed;
 }
 
 /* About */
 section.about {
-  height: 800px;
+  height: auto;
   background-color: white;
+  padding: 20px;
+}
+
+section.about img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+/* Contact */
+section.contact {
+  background-image: url("../img/demo-bg.jpg");
+  background-attachment: fixed;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -179,5 +197,13 @@ section.about {
 @media only screen and (max-width: 768px) {
   .demo .main-title {
     font-size: 3em;
+  }
+
+  .card-inner {
+    width: 100%;
+  }
+
+  .card {
+    margin-bottom: 20px;
   }
 }
