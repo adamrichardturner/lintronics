@@ -1,420 +1,130 @@
-html {
-  scroll-behavior: smooth;
+html, body {
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h5 {
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px 0px;
+/*
+Header Section
+*/
+.large-header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
 }
 
-h3 {
-  padding: 0px;
+canvas {
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
-  padding-bottom: 0px;
+  line-height: 0.75;
 }
 
-h3 {
-  font-size: 1.25rem;
+span.smaller-title {
+  font-size: 0.5em;
 }
 
-p {
-  font-family: 'Titillium Web', sans-serif;
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
+.demo .large-header {
+  background-image: url("../img/demo-bg.jpg");
 }
 
-hr {
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 2px;
-  background-color: #000;
-  opcaity: 0.5;
-}
-
-a:hover {
-  color: #000;
-  text-decoration: none;
-}
-
-/* Navbar */
-div.nav-container {}
-
-nav.navbar {
-  font-family: 'Roboto', sans-serif;
-  color: black !important;
-}
-
-nav a.nav-link {
-  color: black !important;
-}
-
-nav a {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a:before {
-  content: "";
+.main-title {
   position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  margin: 0;
+  padding: 0;
+  color: #F9F1E9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
 
-/* Header */
-header {
-  height: auto;
-}
-
-header h1 {
-  font-family: 'Roboto', sans-serif;
+.demo .main-title {
   text-transform: uppercase;
-  text-align: center;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
 }
 
-header h3 {
-  font-size: 1.15rem;
-}
-
-/* Header Slider */
-div.lintronics-slider img {
-  display: block;
-  margin: 0 auto;
-}
-
-div.lintronics-textbox {
-  padding: 20px 0px;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-}
-
-div.lintronics-textbox h1 {
-  font-size: 3.5rem;
-  letter-spacing: 3px;
-}
-
-div.lintronics-textbox h2 {
-  font-size: 1.5rem;
-}
-
-.btn-header {
-  margin-top: 5vh;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 1.25rem 2.25rem;
-  font-size: .85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 10rem;
-  display: inline-block;
-  font-weight: 400;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: black;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.btn-header:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* About Section */
-section#lintronics-about {
-  height: auto;
-  background-color: #D3D3D3;
-  padding: 50px 0px;
-}
-
-section#lintronics-about h2 {
-  padding: 15px 0px;
-}
-
-section#lintronics-about div.container {
-  padding-top: 20px;
-}
-
-section#lintronics-about img {
-  width: 450px;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-div.about-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
+.main-title .thin {
+  font-weight: 200;
 }
 
 /* Services Section */
-.displayNow {
-  display: block;
-}
-
-section#lintronics-services {
-  padding: 50px 0px;
-}
-
-section#lintronics-services div.services-card {
-  background-color: #D3D3D3;
-  padding: 40px;
-  border-radius: 5px;
-  margin: 10px;
-  text-align: center;
-  transition: 0.25s ease-in;
-}
-
-section#lintronics-services div.services-card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-section#lintronics-services div.services-card i {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-section#lintronics-services div.services-card ul {}
-
-/* PC Repairs */
-section#lintronics-services-full {
-  background-color: #D3D3D3;
-  padding: 50px 0px;
-}
-
-section#lintronics-services-full img {
+div.container-services {
   margin-top: 30px;
-  width: 450px;
   height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Contact Us */
-section#contact {
-  height: auto;
-  padding: 50px 0px;
+i.fa {
+  font-size: 100px;
 }
 
-button#submit {
-  width: 100%;
-}
-
-.googlemap {
+.card {
   display: block;
+  background-color: transparent;
+  width: 270px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-right: 15px;
+  border-radius: 5px;
+  text-align: center;
   margin: 0 auto;
 }
 
-#form {
-  position: static;
-  display: block;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.card-inner {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border: 5px solid black;
 }
 
-/* Footer */
-footer {
-  padding: 25px 0px;
-  background: #68A4C4;
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 991px) {
-  div.lintronics-textbox h1 {
-    font-size: 3rem;
-  }
-
-  div.lintronics-textbox h2 {
-    font-size: 1rem;
-  }
-
-  section#lintronics-about img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  section#lintronics-services-full img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  section#lintronics-about h2, p {
-    text-align: center;
-  }
-
-  nav a:before {
-    content: none;
-    height: 0px;
-    display: none;
-    opacity: 0;
-    background-color: white !important;
-  }
-
-  nav a:hover:before {
-    height: 1000px;
-    opacity: 0;
-    display: none;
-    visibility: hidden;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    background-color: white !important;
-  }
+.card-front {
+  background-color: #bbb;
+  color: black;
 }
 
-@media only screen and (max-width: 767px) {
-  div.lintronics-slider img {
-    width: 100%;
-  }
-
-  section#lintronics-about img {
-    width: 100%;
-  }
-
-  section#lintronics-services-full img {
-    width: 100%;
-  }
-
-  section#lintronics-about p {
-    min-width: 200px;
-    padding: 0px 20px 0px 20px;
-  }
-
-  #form {
-    margin: 20px;
-  }
-
-  button#submit {
-    width: 100%;
-  }
+.card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
 }
 
-@media only screen and (max-width: 507px) {
-  div.lintronics-textbox h1 {
-    font-size: 2rem;
-  }
-
-  div.lintronics-textbox h2 {
-    font-size: 1rem;
-  }
+div.card-front h3 {
+  font-size: 32px;
 }
 
-/* Landscape Media Queries for Header */
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
-
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
-
-/* Landscape */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
-  header {
-    height: auto !important;
-  }
+.card:hover .card-inner {
+  transform: rotateY(180deg);
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 767px) and (orientation: landscape) {
-  header {
-    height: auto !important;
+@media only screen and (max-width: 768px) {
+  .demo .main-title {
+    font-size: 3em;
   }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
-  header {
-    height: auto !important;
-  }
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
-
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  header {
-    height: auto !important;
-  }
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
-
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
-
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  header {
-    height: auto !important;
-  }
-}
-
-/* ----------- iPhone X ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
-
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  header {
-    height: auto !important;
-  }
-}
-
-/* Other Phones */
-@media only screen and (min-device-width: 375px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  header {
-    height: auto !important;
-  }
-}
-
-/* Large Screens */
-@media only screen and (min-width: 1440px) {
-  header {
-    height: auto !important;
-  }
-}
-
-nav a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(0.75);
-  transform: scaleX(0.75);
 }
