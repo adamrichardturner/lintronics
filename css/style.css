@@ -282,6 +282,10 @@ div.strapline iframe {
     margin: 12px auto;
   }
 
+  #myVideo {
+    height: 320px;
+  }
+
   h3.strapline-large {
     font-size: 16px;
   }
