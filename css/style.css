@@ -230,6 +230,10 @@ section.about img {
   margin: 0 auto;
 }
 
+h3.about-strapline {
+  margin-bottom: 60px;
+}
+
 /* Contact */
 section.contact {}
 
@@ -265,6 +269,7 @@ div.footer-title {
 
 div.footer-title address {
   font-size: 12px;
+  margin-bottom: 0px;
 }
 
 div.footer-title p {
@@ -283,7 +288,7 @@ div.footer-title p {
   }
 
   .card {
-    margin: 15px;
+    margin: 60px auto;
   }
 }
 
