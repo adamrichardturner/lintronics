@@ -215,6 +215,8 @@ div.card-front h3 {
   padding: 60px;
 }
 
+.strapline-large {}
+
 /* About */
 section.about {
   height: auto;
