@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   box-sizing: border-box;
   margin: 0;
@@ -28,6 +32,10 @@ div.nav-container li {
   text-decoration: none;
   color: white;
   list-style: none;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: color #fff;
 }
 
 .white {
@@ -239,6 +247,10 @@ div.contact-details {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+}
+
+div.strapline iframe {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
