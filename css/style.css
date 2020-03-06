@@ -253,6 +253,22 @@ div.strapline iframe {
   width: 100%;
 }
 
+/* Footer */
+div.footer-title {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 0px !important;
+}
+
+div.footer-title address {
+  font-size: 12px;
+}
+
+div.footer-title p {
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 1200px) {
   .card-inner {
     width: 80%;
@@ -271,7 +287,7 @@ div.strapline iframe {
 
 @media only screen and (max-width: 768px) {
   .demo .main-title {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .card-inner {
@@ -293,5 +309,13 @@ div.strapline iframe {
   section.about {
     padding: 20px;
     text-align: center;
+  }
+
+  .strapline-container {
+    padding: 20px;
+  }
+
+  p.google-maps-embed {
+    width: 100%;
   }
 }
