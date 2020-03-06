@@ -8,21 +8,44 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <!-- ADDITIONAL STYLESHEET HERE -->
-  <title>SITE NAME</title>
+  <title>LINTRONICS</title>
 </head>
 
 <body>
-  <!-- ALL OF YOUR SITE CODE HERE -->
-  <div class="container-fluid demo">
-    <div class="content">
-      <div id="large-header" class="large-header">
-        <canvas id="demo-canvas"></canvas>
-        <h1 class="main-title">Lintronics<br><span class="smaller-title">Computer Specialists</span><br />
-          <span class="smaller-title">020 8979 7750</span>
-        </h1>
+  <header>
+
+    <div class="container-fluid demo">
+      <div class="content">
+        <div id="large-header" class="large-header">
+          <div class="container-fluid nav-container">
+            <nav class="navbar navbar-light navbar-default navbar-fixed-top">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-dark">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <canvas id="demo-canvas"></canvas>
+          <h1 class="main-title">Lintronics<br><span class="smaller-title">Computer Specialists</span><br />
+            <span class="smaller-title">020 8979 7750</span>
+          </h1>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
+
 
   <section id="services">
     <div class="container">
@@ -132,10 +155,17 @@
     </div>
   </section>
 
+  <section id="video-background" class="video-background">
+    <video autoplay muted loop id="myVideo">
+      <source src="https://static.videezy.com/system/resources/previews/000/012/740/original/Particles_4_-_30s_-_4k_res.mp4" type="video/mp4">
+    </video>
+  </section>
+
   <section id="contact" class="contact">
     <div class="strapline-container">
+
       <div class="strapline">
-        <h3 class="strapline-large white">IT Services for London and South East England</h3>
+        <h3 class="strapline-large">IT Services for London and South East England</h3>
         <p style="text-align: center;"><iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.057521640271!2d-0.3733983842332119!3d51.420369979621015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760b52755c7e43%3A0x6989325c75842cc3!2s53%20Tudor%20Rd%2C%20Hampton%20TW12%202NG!5e0!3m2!1sen!2suk!4v1583447340800!5m2!1sen!2suk"
             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
