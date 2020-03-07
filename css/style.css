@@ -297,6 +297,10 @@ div.footer-title p {
     font-size: 2em;
   }
 
+  h3.about-strapline {
+    margin-bottom: 20px !important;
+  }
+
   .card-inner {
     width: 100%;
   }
@@ -324,5 +328,9 @@ div.footer-title p {
 
   p.google-maps-embed {
     width: 100%;
+  }
+
+  h3.about-strapline {
+    margin-bottom: 0px;
   }
 }
