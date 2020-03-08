@@ -53,6 +53,7 @@ Header Section
   overflow: hidden;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   z-index: 1;
 }
 
@@ -96,10 +97,10 @@ span.smaller-title {
   padding: 0;
   color: #F9F1E9;
   text-align: center;
-  top: 50%;
+  top: 55%;
   left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -55%, 0);
+  transform: translate3d(-50%, -55%, 0);
 }
 
 .demo .main-title {
@@ -274,6 +275,8 @@ div.footer-title address {
 
 div.footer-title p {
   font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1200px) {
