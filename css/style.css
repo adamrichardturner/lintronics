@@ -297,6 +297,10 @@ div.footer-title p {
 }
 
 @media only screen and (max-width: 768px) {
+  canvas {
+    display: none;
+  }
+
   .demo .main-title {
     font-size: 2em;
   }
