@@ -89,6 +89,7 @@ span.smaller-title {
   height: 320px;
   background-image: url("../img/demo-bg.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .main-title {
