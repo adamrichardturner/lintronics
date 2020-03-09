@@ -241,14 +241,43 @@ h3.about-strapline {
   text-transform: uppercase;
 }
 
+div.flex-image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+div.flex-image-container img {
+  padding-right: 15px;
+  height: 252px;
+}
+
 /* Contact */
 section.contact {}
+
+  h3.location-text {
+    font-size: 32px;
+    text-transform: uppercase;
+  }
 
 div.contact-details {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+p.google-maps-embed {
+  margin-bottom: 0px;
+}
+
+div.strapline-nopad {
+  padding: 0px !important;
+}
+
+p.google-maps-embed iframe {
+  width: 100vw !important;
+  height: 500px !important;
 }
 
 #myVideo {
@@ -297,7 +326,11 @@ div.footer-title p {
   }
 
   .card {
-    margin: 60px auto;
+    margin: 16px auto;
+  }
+
+  section.about img {
+    margin: 16px auto;
   }
 }
 
@@ -349,5 +382,9 @@ div.footer-title p {
 
   span.telephone-header {
     font-size: 16px;
+  }
+
+  section.about img {
+    display: none;
   }
 }
