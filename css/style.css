@@ -255,6 +255,28 @@ div.flex-image-container img {
 section.contact {}
 
 .end-header {
+  height: 400px;
+  background-image: url("../img/demo-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.end-header h3 {
+  padding-top: 30px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+}
+
+h3.location-text {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.end-header {
   background-image: url("../img/demo-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -285,6 +307,7 @@ div.contact-details {
 
 p.google-maps-embed {
   margin-bottom: -4px;
+  <<<<<<< HEAD
 }
 
 div.strapline-nopad {
@@ -293,17 +316,27 @@ div.strapline-nopad {
 
 p.google-maps-embed iframe {
   width: 100vw !important;
-}
 
-div.strapline iframe {
-  width: 100%;
-}
+  <<<<<<< HEAD #myVideo {
+    margin-bottom: -6px;
+    height: 320px;
+    min-width: 100%;
+    min-height: 320px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    >>>>>>>1f877815b3c60569dcd0de8a6a9282d5588f6df4
+  }
 
-h3.strapline-down {
-  margin-top: 60px !important;
-}
+  div.strapline iframe {
+    width: 100%;
+  }
 
-form {
+  <<<<<<< HEAD h3.strapline-down {
+    margin-top: 60px !important;
+  }
+
   margin-top: 15px;
   width: 56%;
   display: block;
