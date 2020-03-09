@@ -49,7 +49,7 @@ Header Section
 .large-header {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 80vh !important;
   background: #111;
   overflow: hidden;
   background-size: cover;
@@ -113,6 +113,10 @@ span.smaller-title {
 
 .main-title .thin {
   font-weight: 200;
+}
+
+span.telephone-header {
+  font-size: 46px;
 }
 
 /* Services Section */
@@ -218,8 +222,6 @@ div.card-front h3 {
   padding: 60px;
 }
 
-.strapline-large {}
-
 /* About */
 section.about {
   height: auto;
@@ -235,6 +237,8 @@ section.about img {
 
 h3.about-strapline {
   margin-bottom: 60px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
 }
 
 /* Contact */
