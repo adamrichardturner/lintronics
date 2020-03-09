@@ -16,6 +16,27 @@ html, body {
   overflow-x: hidden;
 }
 
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: none;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
 /* Navbar */
 div.nav-container {
   position: fixed;
@@ -46,6 +67,29 @@ div.nav-container li {
 /*
 Header Section
 */
+div.button-title {
+  background-color: white;
+  color: #000;
+  width: 186px;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5%;
+  padding: 22px;
+  margin-top: 20px;
+  transition: 0.5s;
+  font-weight: bold;
+  letter-spacing: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none !important;
+}
+
+div.button-title:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
 .large-header {
   position: relative;
   width: 100vw;
@@ -511,7 +555,7 @@ div.footer-content {
   }
 
   form {
-    width: 100%;
+    width: 80%;
   }
 
   div.social-media {
