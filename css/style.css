@@ -236,7 +236,6 @@ section.about img {
 }
 
 h3.about-strapline {
-  margin-bottom: 60px;
   letter-spacing: 9px;
   text-transform: uppercase;
 }
@@ -254,6 +253,22 @@ div.flex-image-container img {
 
 /* Contact */
 section.contact {}
+  .end-header {
+    height: 400px;
+    background-image: url("../img/demo-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .end-header h3 {
+    padding-top: 30px;
+  }
+
+  .btn {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+  }
 
   h3.location-text {
     font-size: 32px;
@@ -292,6 +307,13 @@ p.google-maps-embed iframe {
 
 div.strapline iframe {
   width: 100%;
+}
+
+form {
+  margin-top: 15px;
+  width: 56%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Footer */
