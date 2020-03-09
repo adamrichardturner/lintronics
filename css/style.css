@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-html {
-  scroll-behavior: smooth;
-}
+html {}
 
 html, body {
   box-sizing: border-box;
@@ -14,6 +12,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* unvisited link */
@@ -93,7 +92,7 @@ div.button-title:hover {
 .large-header {
   position: relative;
   width: 100vw;
-  height: 80vh !important;
+  height: 72vh !important;
   background: #111;
   overflow: hidden;
   background-size: cover;
