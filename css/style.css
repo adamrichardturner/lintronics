@@ -237,7 +237,7 @@ section.about img {
 
 h3.about-strapline {
   margin-bottom: 60px;
-  letter-spacing: 12px;
+  letter-spacing: 9px;
   text-transform: uppercase;
 }
 
@@ -277,7 +277,6 @@ div.strapline-nopad {
 
 p.google-maps-embed iframe {
   width: 100vw !important;
-  height: 500px !important;
 }
 
 #myVideo {
@@ -377,7 +376,7 @@ div.footer-title p {
   }
 
   h3.about-strapline {
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
   }
 
   span.telephone-header {
