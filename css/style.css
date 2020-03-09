@@ -343,6 +343,11 @@ p.google-maps-embed iframe {
   margin: 0 auto;
 }
 
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
 /* Footer */
 div.footer-title {
   padding: 20px;
