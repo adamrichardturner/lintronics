@@ -346,4 +346,8 @@ div.footer-title p {
   h3.about-strapline {
     margin-bottom: 0px;
   }
+
+  span.telephone-header {
+    font-size: 16px;
+  }
 }
