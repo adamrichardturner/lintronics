@@ -335,6 +335,20 @@ div.footer-title p {
   padding: 0;
 }
 
+.black {
+  font-size: 60px;
+}
+
+div.social-media  {
+  padding: 20px;
+  margin: 20px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-right: 15px;
+}
+
 @media only screen and (max-width: 1200px) {
   .card-inner {
     width: 80%;
@@ -407,5 +421,9 @@ div.footer-title p {
 
   section.about img {
     display: none;
+  }
+
+  form {
+    width: 100%;
   }
 }
