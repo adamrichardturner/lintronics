@@ -22,6 +22,7 @@ div.nav-container {
   top: 0;
   width: 100vw;
   background: white;
+  z-index: 1000;
 }
 
 .navbar-light .navbar-nav .nav-link {
