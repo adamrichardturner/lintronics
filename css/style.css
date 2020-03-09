@@ -49,7 +49,7 @@ Header Section
 .large-header {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 80vh !important;
   background: #111;
   overflow: hidden;
   background-size: cover;
@@ -113,6 +113,10 @@ span.smaller-title {
 
 .main-title .thin {
   font-weight: 200;
+}
+
+span.telephone-header {
+  font-size: 46px;
 }
 
 /* Services Section */
@@ -218,8 +222,6 @@ div.card-front h3 {
   padding: 60px;
 }
 
-.strapline-large {}
-
 /* About */
 section.about {
   height: auto;
@@ -234,11 +236,45 @@ section.about img {
 }
 
 h3.about-strapline {
-  margin-bottom: 60px;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+div.flex-image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+div.flex-image-container img {
+  padding-right: 15px;
+  height: 252px;
 }
 
 /* Contact */
 section.contact {}
+
+.end-header {
+  background-image: url("../img/demo-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.end-header h3 {
+  padding-top: 60px;
+}
+
+.btn {
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+}
+
+h3.location-text {
+  font-size: 32px;
+  text-transform: uppercase;
+}
 
 div.contact-details {
   min-height: 100vh;
@@ -247,19 +283,31 @@ div.contact-details {
   justify-content: center;
 }
 
-#myVideo {
-  margin-bottom: -6px;
-  height: 320px;
-  min-width: 100%;
-  min-height: 320px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
+p.google-maps-embed {
+  margin-bottom: -4px;
+}
+
+div.strapline-nopad {
+  padding: 0px !important;
+}
+
+p.google-maps-embed iframe {
+  width: 100vw !important;
 }
 
 div.strapline iframe {
   width: 100%;
+}
+
+h3.strapline-down {
+  margin-top: 60px !important;
+}
+
+form {
+  margin-top: 15px;
+  width: 56%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Footer */
@@ -281,6 +329,44 @@ div.footer-title p {
   padding: 0;
 }
 
+.black {
+  font-size: 60px;
+}
+
+div.social-media {
+  padding: 40px;
+  margin: 5px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+div.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+}
+
+.footer address {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+}
+
+.copyright {
+  text-align: center !important;
+}
+
 @media only screen and (max-width: 1200px) {
   .card-inner {
     width: 80%;
@@ -288,12 +374,51 @@ div.footer-title p {
 }
 
 @media only screen and (max-width: 991px) {
+  .strapline-container {
+    height: 60%;
+    padding: 40px;
+  }
+
+  .medium-header {
+    height: auto !important;
+  }
+
   .card-inner {
     width: 100%;
   }
 
   .card {
-    margin: 60px auto;
+    margin: 16px auto;
+  }
+
+  section.about img {
+    margin: 16px auto;
+  }
+
+  footer {
+    background: white;
+  }
+
+  div.footer-content {
+    text-align: center;
+    padding: 20px;
+    display: block;
+  }
+
+  div.social-media {
+    margin-top: 0px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  div.social-media i {
+    font-size: 14px;
+    display: block;
+    margin-right: 15px;
+  }
+
+  p.footer-top {
+    margin-top: 60px;
   }
 }
 
@@ -318,10 +443,6 @@ div.footer-title p {
     margin: 12px auto;
   }
 
-  #myVideo {
-    height: 320px;
-  }
-
   h3.strapline-large {
     font-size: 16px;
   }
@@ -332,7 +453,7 @@ div.footer-title p {
   }
 
   .strapline-container {
-    padding: 20px;
+    padding: 40px;
   }
 
   p.google-maps-embed {
@@ -340,6 +461,30 @@ div.footer-title p {
   }
 
   h3.about-strapline {
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
+  }
+
+  span.telephone-header {
+    font-size: 16px;
+  }
+
+  section.about img {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  div.social-media {
+    margin-top: 0px;
+  }
+
+  div.social-media i {
+    font-size: 12px;
+  }
+
+  p.footer-top {
+    margin-top: 0px;
   }
 }
