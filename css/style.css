@@ -255,7 +255,7 @@ div.flex-image-container img {
 section.contact {}
 
 .end-header {
-  height: 400px;
+  height: auto;
   background-image: url("../img/demo-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
