@@ -508,6 +508,11 @@ div.footer-content {
     display: none;
   }
 
+  div.button-title {
+    padding: 10px;
+    font-size: 14px;
+  }
+
   .demo .main-title {
     font-size: 2em;
   }
