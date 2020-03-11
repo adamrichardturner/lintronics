@@ -507,6 +507,10 @@ div.footer-content {
     display: none;
   }
 
+  .large-header, .end-header, .strapline-container {
+    background-attachment: scroll;
+  }
+
   div.button-title {
     padding: 10px;
     font-size: 14px;
