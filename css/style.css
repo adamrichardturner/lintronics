@@ -507,8 +507,8 @@ div.footer-content {
     display: none;
   }
 
-  .large-header, .end-header, .strapline-container {
-    background-attachment: scroll;
+  .large-header, .medium-header, .end-header, .strapline-container {
+    background-attachment: scroll !important;
   }
 
   div.button-title {
