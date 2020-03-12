@@ -19,7 +19,11 @@ a[href^=tel] {
 }
 
 /* unvisited link */
-a:link {
+header a:link {
+  color: white;
+}
+
+footer a {
   color: black;
 }
 
@@ -45,7 +49,7 @@ div.nav-container {
   top: 0;
   width: 100vw;
   background: white;
-  z-index: 1000;
+  z-index: 5;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -69,6 +73,10 @@ div.nav-container li {
 /*
 Header Section
 */
+div.preview-image img {
+  display: none;
+}
+
 div.button-title {
   background-color: white;
   color: #000;
@@ -170,6 +178,7 @@ div.container-services {
   margin-top: 30px;
   height: auto;
   margin-bottom: 50px;
+  z-index: 1;
 }
 
 i.fa {
@@ -236,7 +245,9 @@ ul li:before {
   color: white;
   transform: rotateY(180deg);
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 10px;
 }
 
 .card-back ul {
@@ -420,11 +431,16 @@ div.footer-title p {
 div.social-media {
   padding: 40px;
   margin: 5px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-top: 20px;
+}
+
+div.social-media a:hover {
+  color: #007bff !important;
+  transition: 0.35s;
 }
 
 div.footer-content {
@@ -447,13 +463,25 @@ div.footer-content {
   font-size: 12px;
 }
 
+p.social-media-paragraph a {
+  text-decoration: underline;
+}
+
 .copyright {
   text-align: center !important;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 1200px) {
   .card-inner {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1116px) {
+  span.smaller-title {
+    font-size: 28px;
+    letter-spacing: 2px;
   }
 }
 
@@ -461,6 +489,14 @@ div.footer-content {
   .strapline-container {
     height: 60%;
     padding: 40px;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .large-header, .medium-header, .end-header, .strapline-container {
+    background-attachment: scroll !important;
   }
 
   .medium-header {
@@ -485,7 +521,6 @@ div.footer-content {
 
   div.footer-content {
     text-align: center;
-    padding-top: 0px;
     padding: 20px;
     display: block;
   }
@@ -508,17 +543,14 @@ div.footer-content {
 }
 
 @media only screen and (max-width: 768px) {
-  canvas {
-    display: none;
-  }
-
-  .large-header, .medium-header, .end-header, .strapline-container {
-    background-attachment: scroll !important;
-  }
-
   div.button-title {
-    padding: 10px;
-    font-size: 14px;
+    padding: 12px;
+    font-size: 12px;
+    width: 138px;
+  }
+
+  span.smaller-title {
+    font-size: 0.35em;
   }
 
   .demo .main-title {
@@ -527,6 +559,7 @@ div.footer-content {
 
   h3.about-strapline {
     margin-bottom: 20px !important;
+    letter-spacing: 1px;
   }
 
   .card-inner {
@@ -535,6 +568,13 @@ div.footer-content {
 
   .card {
     margin: 12px auto;
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .card-back ul {
+    font-size: 12px !important;
+    line-height: 30px;
   }
 
   h3.strapline-large {
@@ -542,12 +582,12 @@ div.footer-content {
   }
 
   section.about {
-    padding: 20px;
+    padding: 60px;
     text-align: center;
   }
 
   .strapline-container {
-    padding: 40px;
+    padding: 60px;
   }
 
   p.google-maps-embed {
